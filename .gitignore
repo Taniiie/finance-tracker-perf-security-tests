@@ -1,0 +1,12 @@
+.idea/
+*.iml
+.gauge/
+logs/
+reports/
+target/
+*.class
+.project
+.settings/
+.classpath
+bin/
+.DS_Store
