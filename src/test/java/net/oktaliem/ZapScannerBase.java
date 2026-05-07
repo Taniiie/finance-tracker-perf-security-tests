@@ -33,7 +33,7 @@ public class ZapScannerBase {
     public static final String ZAP_APIKEY = null;
 
 
-    public static final String CHROME_DRIVER_PATH = "drivers/chromedriver-mac"; // depends on your OS
+    public static final String CHROME_DRIVER_PATH = System.getProperty("os.name").toLowerCase().contains("win") ? "drivers/chromedriver.exe" : "drivers/chromedriver-mac"; // depends on your OS
     public static final String MEDIUM = "MEDIUM";
     public static final String HIGH = "HIGH";
     public ScanningProxy zapScanner;
